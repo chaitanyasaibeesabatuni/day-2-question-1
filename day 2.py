@@ -11,3 +11,16 @@ print(lis)
 li = [int(i) for i in input("Enter values : ").split()]
 li = set(li)
 print(li)
+
+
+###################################program two ########################
+
+#################checking string is panagram
+
+
+string = input("Enter the string : ")
+alpha = 'abcdefghijklmnopqrstuvwxyz'
+if len(set(alpha) - set(string.lower()))==0:
+    print("It's a pangram.")
+else:
+    print("It's not a pangram.")
